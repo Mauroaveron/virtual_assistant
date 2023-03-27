@@ -71,7 +71,7 @@ def speak(message):
 
     # Starting the pyttsx3 engine
     engine = pyttsx3.init()
-    engine.setProperty('voice', id1)
+    engine.setProperty('voice', voice_id1)
 
     # Speak message
     engine.say(message)
