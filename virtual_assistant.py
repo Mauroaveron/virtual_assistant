@@ -7,6 +7,8 @@ import webbrowser
 import datetime
 import wikipedia
 
+voice_id1 = 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_EN-GB_HAZEL_11.0'
+
 
 # Listen to our microphone the audio as text
 def convert_audio_to_text():
@@ -64,4 +66,13 @@ def convert_audio_to_text():
             return 'I am still waiting'
 
 
-convert_audio_to_text()
+# Function for the assistant to be heard
+def speak(message):
+
+    # Starting the pyttsx3 engine
+    engine = pyttsx3.init()
+    engine.setProperty('voice', id1)
+
+    # Speak message
+    engine.say(message)
+    engine.runAndWait()
