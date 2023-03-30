@@ -195,6 +195,4 @@ def ask_for_things():
         elif 'goodbye' in request:
             speak("Goodbye, until next time")
             break
-
-
 ask_for_things()
